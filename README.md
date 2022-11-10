@@ -1,7 +1,7 @@
 # SSFP_PulseSeqNMR
 Phase alternation SSFP developed for high resolution spectral acquisition
 Tiago Bueno de Moraes
-tiagobuemoraes@gmail.com
+tiagobuemoraes [a] gmail.com
 University of São Paulo (USP) - Brazil.
 
 ; ############################################################################
@@ -14,3 +14,12 @@ University of São Paulo (USP) - Brazil.
 ; Recommended values: d1 = 0.01001 ms (minimum); Aq = 0.189 ms; d3 = 0.2 ms;
 ; L0 - dummy scan of each phase increment block; 
 ; L1 - scan in each phase increment block;  L0 e L1 need to be multiple of the table phase;
+
+SSFPd2 - uses two block acquisition
+SSFPd4 - uses four block acquisition
+SSFPd8 - uses eight block acquisition
+SSFPdxdt - continuous acquistion
+
+====================
+If you have doubts or suggestions - please email:  tiagobuemoraes [a] gmail.com
+https://sites.google.com/view/tiagomoraes
