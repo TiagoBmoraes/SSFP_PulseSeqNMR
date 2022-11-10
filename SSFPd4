@@ -1,0 +1,73 @@
+; ############################################################################
+; T.B. Moraes, et al.; Steady-State Free Precession sequences for high and low field 
+; NMR spectroscopy in solution: Challenges and opportunities, JMRO, 2022
+; Four block constant phase increment (SSFPd4)
+; 1D sequence with power-gated decoupling
+; ############################################################################
+; Set:  DS = 1 ; NS = 1;  d3 = Aq + d1; 
+; Recommended values: d1 = 0.01001 ms (minimum); Aq = 0.189 ms; d3 = 0.2 ms;
+; L0 - dummy scan of each phase increment block; 
+; L1 - scan in each phase increment block; L0 e L1 need to be multiple of 4;
+
+#include <Avance.incl>
+#include <Delay.incl>
+
+"d11=30m"
+"DELTA=d1-10m"
+"acqt0=-p1*0.66/3.1416"
+
+1 ze
+  d11 pl12:f2
+2 30m do:f2
+  10u pl13:f2
+  d11 cpd2:f2
+  DELTA
+  4u do:f2
+  10u pl12:f2
+  100m cpd2:f2
+3  (p1 pl1 ph1^):f1
+   d3 
+   lo to 3 times l0
+4  (p1 pl1 ph1^):f1
+   gosc ph11 
+   d1 ipp11
+   lo to 4 times l1
+5  (p1 pl1 ph2^):f1
+   d3 
+   lo to 5 times l0
+6  (p1 pl1 ph2^):f1
+   gosc ph12
+   d1 ipp12
+   lo to 6 times l1
+7  (p1 pl1 ph3^):f1
+   d3 
+   lo to 7 times l0
+8  (p1 pl1 ph3^):f1
+   gosc ph13
+   d1 ipp13
+   lo to 8 times l1     
+9  (p1 pl1 ph4^):f1
+   d3 
+   lo to 9 times l0
+10  (p1 pl1 ph4^):f1
+   gosc ph14
+   d1 ipp14
+   lo to 10 times l1
+  30m do:f2 pl13:f2 mc #0 to 2 F0(zd)
+exit
+
+;Phase increment 0
+ph1=  0 
+ph11= 0  
+
+;Phase increment 90
+ph2=  0 1 2 3  
+ph12= 0 1 2 3  
+
+;Phase increment 180
+ph3=  0 2  
+ph13= 0 2
+
+;Phase increment 270
+ph4=   0 3 2 1
+ph14=  0 3 2 1
