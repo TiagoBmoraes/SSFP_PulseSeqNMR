@@ -21,6 +21,7 @@ SSFPd8 - uses eight block acquisition
 SSFPdxdt - non-linear phase increment with continuous acquisition
 
 References
+
 [1] Moraes, T.B.; et al.; Steady-State Free Precession sequences for high and low field NMR spectroscopy in solution: Challenges and opportunities, Journal of Magnetic Resonance Open, v. 14-15, 100090, 2023.
 https://doi.org/10.1016/j.jmro.2022.100090
 
