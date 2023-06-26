@@ -21,11 +21,14 @@ SSFPd8 - uses eight block acquisition
 SSFPdxdt - non-linear phase increment with continuous acquisition
 
 References
-[1] Moraes, T.B.; et al.; Suppression of spectral anomalies in SSFP-NMR signal by the Krylov Basis Diagonalization Method, 
+[1] Moraes, T.B.; et al.; Steady-State Free Precession sequences for high and low field NMR spectroscopy in solution: Challenges and opportunities, Journal of Magnetic Resonance Open, v. 14-15, 100090, 2023.
+https://doi.org/10.1016/j.jmro.2022.100090
+
+[2] Moraes, T.B.; et al.; Suppression of spectral anomalies in SSFP-NMR signal by the Krylov Basis Diagonalization Method, 
 Journal of Magnetic Resonance, v. 243, p. 74-80, 2014.
 https://doi.org/10.1016/j.jmr.2014.03.009
 
-[2] Moraes, T.B.; Precessão Livre no Estado Estacionário com alternância de fase para RMN em alta e baixa resolução, 172 p.,
+[3] Moraes, T.B.; Precessão Livre no Estado Estacionário com alternância de fase para RMN em alta e baixa resolução, 172 p.,
 Tese (Doutorado em Física), Instituto de Física de São Carlos, Universidade de São Paulo (USP), 2016.
 
 ====================
